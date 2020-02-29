@@ -1,0 +1,64 @@
+section#hero
+    width: 100%
+    height: 100vh
+    background-image: url('assets/img/background.jpg')
+    background-size: cover
+    background-position: center center
+    position: relative
+
+    .overlay
+        background: #00000090
+        height: 100%
+        width: 100%
+        z-index: 500
+    
+    .hero__content
+        width: 50%
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+
+        .img__wrap
+            width: 195px
+            height: 195px
+            border: 5px solid $primary
+            border-radius: 100%
+            position: relative
+            margin: 0 auto
+            overflow: hidden
+            z-index: 999
+
+            img
+                width: 700px
+                position: absolute
+                top: 110%
+                left: 50%
+                transform: translate(-50%,-50%)
+                z-index: 500
+        
+        .name__container
+            letter-spacing: 0.5
+            font-weight: 300
+            margin: 0 auto
+            text-align: center
+
+            h1
+                color: $primary
+                font-size: 50px
+                font-weight: 400
+                font-family: 'Montserrat', sans-serif
+                text-transform: uppercase
+                margin: 10px 0 0 0
+            
+                span
+                    color: $secondary
+            
+        .description__container
+            p
+                color: $white
+                text-align: center
+                font-family: 'Montserrat', sans-serif
+                font-size: 24px
+                font-weight: 400
+                margin: 0
