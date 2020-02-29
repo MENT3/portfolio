@@ -15,10 +15,11 @@ $primary: #f6f7fd;
 $secondary: #DC9A1D;
 $dark: #00303f;
 $white: #fff;
-$balck: #010101;
+$black: #010101;
 
 @import "component";
 @import "nav";
 @import "hero";
 @import "about";
 @import "skill";
+@import "portfolio";
