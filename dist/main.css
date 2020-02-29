@@ -1,7 +1,33 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth; }
+
+.category__title {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Montserrat', sans-serif;
+  width: 85%;
+  margin: 90px auto 50px auto;
+  position: relative; }
+  .category__title h2 {
+    color: #00303f;
+    font-size: 50px;
+    padding-left: 25px;
+    margin: 0; }
+  .category__title p {
+    color: #00303f;
+    font-size: 18px;
+    padding-left: 25px;
+    margin: 0; }
+  .category__title::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: 6px;
+    height: 100%;
+    background: #DC9A1D; }
 
 nav {
   width: 100%;
@@ -85,3 +111,76 @@ section#hero {
       font-size: 24px;
       font-weight: 400;
       margin: 0; }
+
+section#about .about__definition {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  width: 80%;
+  margin: 0 auto; }
+  section#about .about__definition .about__wrap p {
+    line-height: 1.8;
+    letter-spacing: 0.5;
+    text-align: justify;
+    color: #333;
+    max-width: 1300px; }
+    section#about .about__definition .about__wrap p strong {
+      font-weight: bold;
+      color: #00303f; }
+
+section#about .information__wrap {
+  width: 100%;
+  min-height: 130px; }
+  section#about .information__wrap ul {
+    list-style: none;
+    margin-top: 25px;
+    padding: 0; }
+    section#about .information__wrap ul li {
+      float: left;
+      width: 50%;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+      line-height: 1.8; }
+      section#about .information__wrap ul li label {
+        font-weight: 700;
+        color: #00303f;
+        font-size: 13px;
+        display: inline-block;
+        width: 83px; }
+
+section#about .button__wrap {
+  margin-top: 20px; }
+  section#about .button__wrap ul {
+    padding: 0; }
+    section#about .button__wrap ul li {
+      display: inline-block;
+      margin-right: 20px; }
+      section#about .button__wrap ul li a.button__link {
+        text-decoration: none;
+        color: #FFF;
+        font-weight: 600;
+        background: #DC9A1D;
+        font-family: 'Montserrat', sans-serif;
+        padding: 12px 35px;
+        border-radius: 3px;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        border: none; }
+        section#about .button__wrap ul li a.button__link span {
+          position: relative;
+          z-index: 2; }
+        section#about .button__wrap ul li a.button__link::before {
+          position: absolute;
+          content: "";
+          top: 0;
+          height: 100%;
+          left: -25%;
+          width: 0;
+          background-color: #00303f;
+          transform: skew(50deg);
+          transition-duration: .4s;
+          z-index: 1; }
+        section#about .button__wrap ul li a.button__link:hover::before {
+          width: 140%;
+          z-index: 1; }
