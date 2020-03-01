@@ -2,7 +2,7 @@ doctype html
 html
   head
     title node-sass-pug
-    link(rel='stylesheet' type='text/css' href='main.css')
+    link(rel='stylesheet' type='text/css' href='assets/css/main.css')
     link(rel='stylesheet' href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap")
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Titillium+Web&display=swap")
 
@@ -10,7 +10,7 @@ html
     title Clément RAMOS LAGE
   body
     header
-      nav.nav
+      nav.nav.fixed
         ul.nav__list
           li.nav__item
             a.nav__link.active(href="#") Acceuil
@@ -158,22 +158,24 @@ html
                 h2 Connected Flower
               .portfolio__description
                 p Dans le cadre d'un projet scolaire pour valider ma première année, nous avons conçu une application de plante connectée.
-                            
+
+    section#contact
+      .contact__container                 
+        .category__container
+          .category__title
+            h2 Contact
+            p Je ne mords pas
+
+        .contact__form__container
+          form(action="email", method="post")#contact__form
+            input(type="text", name="name", placeholder="Nom", required)
+            input(type="email", name="email", placeholder="Email", required)
+            textarea(name="name", cols="30", rows="10", placeholder="Message", required)
+            button(type="submit").button 
+              span Envoyer
+
+    footer
+      p © 2019 RAMOS LAGE Clément | Tous droits réservés.
 
 
     script(src="https://kit.fontawesome.com/c74f583355.js")
-
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
