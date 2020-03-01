@@ -10,18 +10,18 @@ html
     title Clément RAMOS LAGE
   body
     header
-      nav.nav.fixed
+      nav.nav
         ul.nav__list
           li.nav__item
-            a.nav__link.active(href="#") Acceuil
+            a.nav__link.active(href="#hero") Acceuil
           li.nav__item
-            a.nav__link(href="#") A propos
+            a.nav__link(href="#about") A propos
           li.nav__item
-            a.nav__link(href="#") Portfolio
+            a.nav__link(href="#portfolio") Portfolio
           li.nav__item
-            a.nav__link(href="#") Contact
+            a.nav__link(href="#contact") Contact
 
-    section#hero
+    section.section#hero
       .overlay
       .hero__content
         .img__wrap
@@ -36,7 +36,7 @@ html
             strong#animatedText
               span développeur
 
-    section#about
+    section.section#about
       .category__container
         .category__title
           h2 A Propos
@@ -79,7 +79,7 @@ html
               a.button__link(href="#contact")
                 span Me contacter
 
-    section#skill
+    section.section#skill
       .skill__container
         .skill__left
           h3 Compétences principales
@@ -121,7 +121,7 @@ html
             .skill__bar
               .skill__bar--value(style="width: 75%")
 
-    section#portfolio
+    section.section#portfolio
       .category__container
         .category__title
           h2 Portfolio
@@ -159,7 +159,7 @@ html
               .portfolio__description
                 p Dans le cadre d'un projet scolaire pour valider ma première année, nous avons conçu une application de plante connectée.
 
-    section#contact
+    section.section#contact
       .contact__container                 
         .category__container
           .category__title
@@ -179,3 +179,8 @@ html
 
 
     script(src="https://kit.fontawesome.com/c74f583355.js")
+    //- script(src="assets/js/jQuery.js")
+    script(src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous")
+    script(src="assets/js/main.js")

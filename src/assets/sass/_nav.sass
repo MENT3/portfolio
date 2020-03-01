@@ -3,6 +3,7 @@ nav
     height: 66px
     position: fixed
     z-index: 999
+    transition: .2s ease
 
     .nav__list
         height: 100%
@@ -20,6 +21,13 @@ nav
                 color: $white
                 position: relative
 
+            .fixed
+                color: $dark
+
+                &::before
+                    background: $dark
+                    
+
     .active
         &::before
             content: ""
@@ -29,6 +37,7 @@ nav
             bottom: -4px
             left: 0
             background: $white
+
 
 nav.fixed
     background: $white
