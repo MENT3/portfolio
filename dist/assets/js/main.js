@@ -1,11 +1,13 @@
 jQuery(($) => {
+    const linkScroll = $('.nav__link')
 
     $(window).scroll((event) => {
 
         let scrollDistance = $(window).scrollTop()
 
         $('.section').each((i) => {
-            if ($('.section').eq(i).position().top <= scrollDistance) {
+
+            if ($('.section').eq(i).position().top <= scrollDistance+150) {
                 $('.nav a.active').removeClass('active');
                 $('.nav .nav__link').eq(i).addClass('active');
             }
@@ -16,6 +18,15 @@ jQuery(($) => {
         } else {
             $('.nav__link, .nav').removeClass("fixed")
         }
+
+
     })
+
+    linkScroll.on('click', function(e) {
+        e.preventDefault();
+        $('body, html').animate({
+            scrollTop: $(this.hash).offset().top - 100
+        }, 500);
+    });
 
 })

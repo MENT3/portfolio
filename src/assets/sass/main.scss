@@ -1,27 +1,12 @@
 $text-color: rgb(0, 100, 100);
 
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  scroll-behavior: smooth;
-  // height: 100%;
-  // font-family: sans-serif;
-  // background: red;
-}
-
-// Colors
-$primary: #f6f7fd;
-$secondary: #DC9A1D;
-$dark: #00303f;
-$white: #fff;
-$black: #010101;
-
-@import "component";
-@import "nav";
-@import "hero";
-@import "about";
-@import "skill";
-@import "portfolio";
-@import "contact";
-@import "footer";
+@import "./helpers/reset";
+@import "./helpers/variables";
+@import "./theme/component";
+@import "./layout/nav";
+@import "./layout/hero";
+@import "./layout/about";
+@import "./layout/skill";
+@import "./layout/portfolio";
+@import "./layout/contact";
+@import "./layout/footer";
