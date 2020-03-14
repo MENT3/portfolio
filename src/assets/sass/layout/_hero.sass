@@ -19,7 +19,7 @@ section#hero
         left: 50%
         transform: translate(-50%,-50%)
 
-        @media screen and ( min-width: $sm )
+        @media screen and ( max-width: $md )
             width: 80%
 
         .img__wrap
@@ -32,9 +32,9 @@ section#hero
             overflow: hidden
             z-index: 999
 
-            @media screen and ( min-width: $sm )
-                width: 350px !important
-                height: 350px !important
+            @media screen and ( max-width: $md )
+                width: 150px
+                height: 150px
 
             img
                 width: 700px
@@ -44,8 +44,8 @@ section#hero
                 transform: translate(-50%,-50%)
                 z-index: 500
 
-                @media screen and ( min-width: $sm )
-                    width: 1500px !important
+                @media screen and ( max-width: $md )
+                    width: 600px !important
                     top: 120%
         
         .name__container
@@ -54,7 +54,7 @@ section#hero
             margin: 0 auto
             text-align: center
             
-            @media screen and ( min-width: $sm )
+            @media screen and ( max-width: $md )
                 margin-top: 40px
                 padding-bottom: 40px
 
@@ -66,14 +66,15 @@ section#hero
                 text-transform: uppercase
                 margin: 10px 0 0 0
             
+                @media screen and ( max-width: $md )
+                    font-size: 2em
+
                 span
                     color: $secondary
 
-                    @media screen and ( min-width: $sm )
+                    @media screen and ( max-width: $md )
                         display: block
 
-                @media screen and ( min-width: $sm )
-                    font-size: 5em
             
         .description__container
             p
@@ -84,7 +85,7 @@ section#hero
                 font-weight: 400
                 margin: 0
 
-            @media screen and ( min-width: $sm )
+            @media screen and ( max-width: $md )
                 display: none
 
 
@@ -98,8 +99,8 @@ section#hero
             transform: translateX(-50%)
             animation: bounce 2s infinite
 
-            @media screen and ( min-width: $sm )
-                font-size: 50px
+            @media screen and ( max-width: $md )
+                font-size: 2em
 
             @keyframes bounce 
                 0%, 20%, 50%, 80%, 100%

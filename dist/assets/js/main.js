@@ -28,13 +28,13 @@ jQuery(($) => {
     linkScroll.on('click', function(e) {
         e.preventDefault();
         $('body, html').animate({
-            scrollTop: $(this.hash).offset().top - 100
+            scrollTop: $(this.hash).offset().top - ($(window).width() <= 756 ? 50 : 0)
         }, 300);
     });
 
     downArrow.on('click', function(e) {
         $('body, html').animate({
-            scrollTop: $('#about').offset().top - 100
+            scrollTop: $('#about').offset().top - ($(window).width() <= 756 ? 50 : 0)
         }, 300);
     })
 
