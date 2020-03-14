@@ -1,4 +1,6 @@
 jQuery(($) => {
+
+    const sections = $('.section')
     const linkScroll = $('.nav__link')
     const downArrow = $('.arrow-scroll-down')
 
@@ -6,9 +8,9 @@ jQuery(($) => {
 
         let scrollDistance = $(window).scrollTop()
 
-        $('.section').each((i) => {
+        sections.each((i) => {
 
-            if ($('.section').eq(i).position().top <= scrollDistance+150) {
+            if (sections.eq(i).position().top <= scrollDistance+150) {
                 $('.nav a.active').removeClass('active');
                 $('.nav .nav__link').eq(i).addClass('active');
             }
