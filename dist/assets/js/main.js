@@ -3,6 +3,7 @@ jQuery(($) => {
     const sections = $('.section')
     const linkScroll = $('.nav__link')
     const downArrow = $('.arrow-scroll-down')
+    const contactButton = $("a[href$='#contact']")
 
     $(window).scroll((event) => {
 
@@ -35,6 +36,12 @@ jQuery(($) => {
     downArrow.on('click', function(e) {
         $('body, html').animate({
             scrollTop: $('#about').offset().top - ($(window).width() <= 756 ? 50 : 0)
+        }, 300);
+    })
+
+    contactButton.on('click', function(e) {
+        $('body, html').animate({
+            scrollTop: $('#contact').offset().top - ($(window).width() <= 756 ? 50 : 0)
         }, 300);
     })
 

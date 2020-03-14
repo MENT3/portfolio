@@ -1,15 +1,23 @@
 section#contact
     .contact__container
         width: 100%
-        height: 600px
+        height: 100%
         background: $primary
         padding-bottom: 60px
         overflow: auto
 
         .contact__form__container
+
+            @media screen and ( max-width: $lg )
+                width: 80%
+                margin: 0 auto
+                margin-top: 60px
+                scroll: none
+
             form
                 max-width: 700px
                 margin: 0 auto
+
 
                 input, button
                     background: none
@@ -23,6 +31,10 @@ section#contact
                     height: 40px
                     margin-bottom: 10px
                     padding: 10px
+
+                    @media screen and ( max-width: $md )
+                            width: calc( 100% - 28px )
+                            margin-bottom: 30px
 
                     &:first-child
                         margin-right: 10px
@@ -43,6 +55,9 @@ section#contact
                     display: inline-block
                     overflow: hidden
                     position: relative
+
+                    @media screen and ( max-width: $md )
+                        width: 100%
 
                     span 
                         position: relative

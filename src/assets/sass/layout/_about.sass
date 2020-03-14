@@ -1,6 +1,9 @@
 section#about
     padding-bottom: 50px
 
+    @media screen and ( max-width: $md )
+        padding-bottom: 30px
+
     .about__definition
         font-weight: 400
         font-size: 14px
@@ -21,6 +24,7 @@ section#about
 
                 @media screen and ( max-width: $sm )
                     font-size: 1.2em
+                    margin-bottom: 40px
     
                 strong
                     font-weight: bold
@@ -72,7 +76,10 @@ section#about
             li
                 display: inline-block
                 margin-right: 20px
-            
+
+                @media screen and ( max-width: $md )
+                    margin-bottom: 10px
+
                 a.button__link
                     text-decoration: none;
                     color: #FFF
