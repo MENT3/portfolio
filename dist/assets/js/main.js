@@ -1,5 +1,6 @@
 jQuery(($) => {
     const linkScroll = $('.nav__link')
+    const downArrow = $('.arrow-scroll-down')
 
     $(window).scroll((event) => {
 
@@ -26,7 +27,13 @@ jQuery(($) => {
         e.preventDefault();
         $('body, html').animate({
             scrollTop: $(this.hash).offset().top - 100
-        }, 500);
+        }, 300);
     });
+
+    downArrow.on('click', function(e) {
+        $('body, html').animate({
+            scrollTop: $('#about').offset().top - 100
+        }, 300);
+    })
 
 })
