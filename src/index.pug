@@ -18,11 +18,13 @@ html
           li.nav__item
             a.nav__link(href="#about") A propos
           li.nav__item
+            a.nav__link(href="#skills") Compétences
+          li.nav__item
             a.nav__link(href="#portfolio") Portfolio
           li.nav__item
             a.nav__link(href="#contact") Contact
 
-    section.section#hero
+    section(data-spy).section#hero
       .overlay
       .hero__content
         .img__wrap
@@ -40,7 +42,7 @@ html
       .arrow-scroll-down
         i.fas.fa-angle-double-down
 
-    section.section#about
+    section(data-spy).section#about
       .category__container
         .category__title
           h2 A Propos
@@ -86,7 +88,7 @@ html
               a.button__link(href="#contact")
                 span Me contacter
 
-    section#skill
+    section(data-spy)#skills
       .skill__container
         .skill__left
           h3 Compétences principales
@@ -128,7 +130,7 @@ html
             .skill__bar
               .skill__bar--value(style="width: 90%")
 
-    section.section#portfolio
+    section(data-spy).section#portfolio
       .category__container
         .category__title
           h2 Portfolio
@@ -166,7 +168,7 @@ html
               .portfolio__description
                 p Dans le cadre d'un projet scolaire pour valider ma première année, nous avons conçu une application de plante connectée.
 
-    section.section#contact
+    section(data-spy).section#contact
       .contact__container                 
         .category__container
           .category__title
