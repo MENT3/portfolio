@@ -1,4 +1,0 @@
-#!/bin/sh
-
-rsync -av ./dist/* u100014063@access816807043.webspace-data.io:~/CV
-
