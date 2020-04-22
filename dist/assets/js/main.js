@@ -40,22 +40,43 @@ if (sectionsSpies.length > 0) {
     })
 }
 
-
-// CHANGE THIS !!!! 
 jQuery(($) => {
 
-    const sections = $('.section')
+    const linkScroll = $('.nav__link')
+    const downArrow = $('.arrow-scroll-down')
+    const contactButton = $("a[href$='#contact']")
+    const topBtn = $('#topBtn')
 
+    // Nav links scroll
+    linkScroll.on('click', function(e) {
+        e.preventDefault()
+        $('body, html').animate({
+            scrollTop: $(this.hash).offset().top - ($(window).width() <= 756 ? 50 : 100)
+        }, 300)
+    })
+
+    // Hero down arrow scroll
+    downArrow.on('click', function(e) {
+        $('body, html').animate({
+            scrollTop: $('#about').offset().top - ($(window).width() <= 756 ? 50 : 100)
+        }, 300)
+    })
+
+    // Fix nav bar on scroll
     $(window).scroll((event) => {
+        if($(this).scrollTop() > 10) $('.nav__link, .nav').addClass("fixed")
+        else $('.nav__link, .nav').removeClass("fixed")
+    })
 
-        let scrollDistance = $(window).scrollTop()
+    // Show top button on scroll
+    $(window).scroll(function() {
+        if($(window).scrollTop() > 300 && $(window.innerWidth)[0] > 800) topBtn.addClass('show')
+        else topBtn.removeClass('show') 
+    })
 
-        if($(this).scrollTop() > 10) {
-            $('.nav__link, .nav').addClass("fixed")
-        } else {
-            $('.nav__link, .nav').removeClass("fixed")
-        }
-
-
+    // Go to top 
+    topBtn.on('click', function(e) {
+      e.preventDefault()
+      $('html, body').animate({scrollTop:0}, '300')
     })
 })

@@ -37,3 +37,36 @@
 
         @media screen and ( max-width: $sm )
             top: 0
+
+#topBtn
+    display: inline-block
+    background-color: $secondary
+    width: 40px
+    height: 40px
+    text-align: center
+    border-radius: 4px
+    position: fixed
+    bottom: 20px
+    right: 20px
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s
+    opacity: 0
+    visibility: hidden
+    z-index: 1000
+
+    &.show
+        opacity: 1 !important
+        visibility: visible !important
+
+    &::after
+        content: "\f077"
+        font-family: FontAwesome
+        font-weight: normal
+        font-style: normal
+        font-size: 1.5em
+        line-height: 40px
+        color: #fff
+
+    &:hover
+        cursor: pointer
+        background-color: $dark
