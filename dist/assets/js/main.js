@@ -40,12 +40,32 @@ if (sectionsSpies.length > 0) {
     })
 }
 
-jQuery(($) => {
 
+// Animated text
+new TypeIt("#animatedText", { 
+    speed: 70,
+    deleteSpeed: 100,
+    waitUntilVisible: true,
+    loop: true
+})
+    .type("Je suid un", {delay: 300})
+    .pause(500)
+    .move(-3)
+    .delete(1)
+    .type('s')
+    .move('END')
+    .type(' develop')
+    .delete(-7)
+    .pause(200)
+    .type('<strong>Développeur</strong>')
+    .pause(2000)
+    .go();
+
+jQuery(($) => {
+    const topBtn = $('#topBtn')
     const linkScroll = $('.nav__link')
     const downArrow = $('.arrow-scroll-down')
     const contactButton = $("a[href$='#contact']")
-    const topBtn = $('#topBtn')
 
     // Nav links scroll
     linkScroll.on('click', function(e) {
@@ -72,6 +92,13 @@ jQuery(($) => {
     $(window).scroll(function() {
         if($(window).scrollTop() > 300 && $(window.innerWidth)[0] > 800) topBtn.addClass('show')
         else topBtn.removeClass('show') 
+    })
+
+    // Contact bouton
+    contactButton.on('click', function(e) {
+        $('body, html').animate({
+            scrollTop: $('#contact').offset().top - ($(window).width() <= 756 ? 50 : 100)
+        }, 300);
     })
 
     // Go to top 
