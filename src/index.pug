@@ -32,11 +32,11 @@ html
       .hero__content
         .img__wrap
           img(src="assets/img/profile.jpg")
-        
+
         .name__container
-          h1 CLÉMENT 
+          h1 CLÉMENT
             span RAMOS LAGE
-        
+
         .description__container
           p#animatedText
 
@@ -48,42 +48,44 @@ html
         .category__title
           h2 A Propos
           p Principalles informations à propos de moi
-        
+
       .about__definition
         .about__wrap
-          p 
-            | Hey, je m'appelle 
-            strong Clément RAMOS LAGE
-            | . Je suis actuellement en 2ème année de Bachelor Informatique à Ingésup Paris. Durant cette formation, j'ai pu découvrir les principaux aspects de l'informatique et les développer pour acquérir de nouvelles compétences. De la conception à la réalisation j'ai pu mettre en pratique un bon nombres de compétences. Je suis actuellement à la recherche d'un stage pour valider mon année.
+          p
+            | Hey, je m'appelle
+            strong  Clément RAMOS LAGE
+            |  je suis actuellement étudiant en 3ème année de Bachelor Informatique à Ynov Paris en option cyber-sécurité et en alternance en tant que développeur full stack chez SeniorMedia.
+          p
+            | Durant ma formation, j'ai pu découvrir de nombreux aspects de l'informatique mais aussi développer de nouvelles compétences. De la conception à la réalisation, j'ai pu apprendre et mettre en pratique bon nombres de compétences.
 
         .information__wrap
           ul
             li
-              label Ville: 
+              label Ville:
               | Paris
             li
-              label Intérêts: 
+              label Intérêts:
               | Crossfit, Music
             li
-              label GitHub: 
-              | 
+              label GitHub:
+              |
               a(href="https://github.com/MENT3", target="_blank") MENT3
             li
-              label Etude: 
+              label Etude:
               | Ynov Ingésup Paris
             li
-              label Site Web: 
-              | 
-              a(href="http://clement-rms.fr", target="_blank") Clement-ramos.fr
+              label Site Web:
+              |
+              a(href="http://clement.ramos-lage.fr", target="_blank") Clement.ramos-lage.fr
             li
               label Email:
-              | 
+              |
               a(href="mailto:clement.ramoslage@ynov.com") Clement.ramoslage@ynov.com
 
         .button__wrap
           ul
             li
-              a.button__link(href="#")
+              a.button__link(href="/assets/files/cv.pdf")
                 span Télécharger le CV
             li
               a.button__link(href="#contact")
@@ -94,40 +96,40 @@ html
         .skill__left
           h3 Compétences principales
           p Le développement de mes difféntes compétence est en constente évolution car je ne cesse d'apprendre. Que se soit par mes propres moyens où dans le cadre de mes études j'adore me documenter.
-        
+
         .skill__right
           .skill__item
             span.skill__progression__value 90%
             h5
-              strong Web 
+              strong Web
               | (PHP - HTML - CSS - JavaScript)
-          
+
             .skill__bar
               .skill__bar--value(style="width: 90%")
 
           .skill__item
             span.skill__progression__value 80%
             h5
-              strong Algorithmique 
+              strong Algorithmique
               | (C - Python - JavaScript - Java)
-          
+
             .skill__bar
               .skill__bar--value(style="width: 80%")
-              
+
           .skill__item
             span.skill__progression__value 70%
             h5
-              strong Infra 
+              strong Infra
               | (Linux - Windows Server - CCNA)
-          
+
             .skill__bar
               .skill__bar--value(style="width: 70%")
           .skill__item
             span.skill__progression__value 90%
             h5
-              strong OS 
+              strong OS
               | (Linux - MacOs - Windows)
-          
+
             .skill__bar
               .skill__bar--value(style="width: 90%")
 
@@ -139,17 +141,17 @@ html
 
       .portfolio__container
         .portfolio__item
-          a(href="https://crossfit-lafontaine.com" target="_blank")
+          a(href="https://www.canva.com/design/DAD4GE8nZqE/K1ur-dSclNJ5-UPaI5sWpA/view?utm_content=DAD4GE8nZqE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank")
             .portfolio__content
               .portfolio__icon
                 i.fas.fa-dumbbell(aria-hidden="true")
               .portfolio__title
-                h2 Crossfit La Fontaine
+                h2 Carrément Bien[S]
               .portfolio__description
-                p Dans le cadre d'un stage, de validation de fin d'année, à Crossfit La Fontaine j'ai réalisé une refonte total de leurs site internet.
-                            
+                p Dans le cadre des YDAYS de mon école, j'ai pris contact avec une OBBO PROD afin de réaliser une partie de leur application mobile.
+
         .portfolio__item
-          a(href="https://crossfit-lafontaine.com" target="_blank")
+          a(href="https://github.com/Weder77/SportWithYou-" target="_blank")
             .portfolio__content
               .portfolio__icon
                 i.fas.fa-running(aria-hidden="true")
@@ -157,10 +159,9 @@ html
                 h2 Sport With You
               .portfolio__description
                 p Dans le cadre d'un projet scolaire sur 3 semaines (YDAYS), j'ai développé pour la première fois une application mobile.
-                            
-                            
+
         .portfolio__item
-          a(href="https://crossfit-lafontaine.com" target="_blank")
+          a(href="https://github.com/MENT3/Connected-Flowers" target="_blank")
             .portfolio__content
               .portfolio__icon
                 i.fab.fa-pagelines(aria-hidden="true")
@@ -170,7 +171,7 @@ html
                 p Dans le cadre d'un projet scolaire pour valider ma première année, nous avons conçu une application de plante connectée.
 
     section(data-spy).section#contact
-      .contact__container                 
+      .contact__container
         .category__container
           .category__title
             h2 Contact
@@ -181,7 +182,7 @@ html
             input(type="text", name="name", placeholder="Nom", required)
             input(type="email", name="email", placeholder="Email", required)
             textarea(name="name", cols="30", rows="10", placeholder="Message", required)
-            button(type="submit").button 
+            button(type="submit").button
               span Envoyer
 
     footer

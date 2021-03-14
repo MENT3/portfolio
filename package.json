@@ -9,7 +9,7 @@
   "scripts": {
     "serve": "live-server --watch=\"dist/assets/css/*.css,dist/*.html\" --mount=/:dist",
     "build:scss-to-css": "node-sass src/assets/sass -o dist/assets/css",
-    "build:pug-to-html": "pug src -o dist --pretty",
+    "build:pug-to-html": "pug src -o dist",
     "build:post-css": "postcss --no-map --use autoprefixer cssnano -d dist/assets/css --ext .min.css dist/assets/css/*.css",
     "build": "del-cli dist/assets/css/* && npm run build:scss-to-css && npm run build:post-css && npm run build:pug-to-html",
     "watch:scss-to-css": "node-sass --watch src/assets/sass -o dist/assets/css",
@@ -28,6 +28,6 @@
     "pug-cli": "^1.0.0-alpha6"
   },
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.6.0"
   }
 }
