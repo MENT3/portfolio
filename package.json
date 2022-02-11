@@ -23,7 +23,7 @@
     "cssnano": "^3.10.0",
     "del-cli": "^1.1.0",
     "live-server": "^1.2.0",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "postcss-cli": "^4.1.1",
     "pug-cli": "^1.0.0-alpha6"
   },
